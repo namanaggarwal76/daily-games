@@ -1,0 +1,919 @@
+[
+  {
+    "name": "Worldle",
+    "url": "https://worldle.teuteuf.fr",
+    "description": "Country from its outline.",
+    "category": "Geography & world",
+    "featured": true
+  },
+  {
+    "name": "Globle",
+    "url": "https://globle-game.com",
+    "description": "Find the mystery country on a 3D globe; guesses turn warmer as you get closer.",
+    "category": "Geography & world",
+    "featured": true
+  },
+  {
+    "name": "Travle",
+    "url": "https://imois.in/games/travle",
+    "description": "Shortest border-hopping route between two countries.",
+    "category": "Geography & world",
+    "featured": true
+  },
+  {
+    "name": "Tradle",
+    "url": "https://oec.world/en/tradle",
+    "description": "Country from a treemap of its exports.",
+    "category": "Geography & world",
+    "featured": true
+  },
+  {
+    "name": "Capitalle",
+    "url": "https://www.capitalle.app",
+    "description": "Bundle of geography dailies: capitals, border routes, silhouettes, logos.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "Chartle",
+    "url": "https://chartle.cc",
+    "description": "Country from the trajectory of a data chart.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "Weatherdle",
+    "url": "https://weatherdle.org",
+    "description": "City from its weather.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "Hot or Not",
+    "url": "https://hotornot.guissmo.com",
+    "description": "Guess current temperatures of cities (answers change in real time).",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "City Guesser",
+    "url": "https://virtualvacation.us/guess",
+    "description": "City from street-level video footage.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "Juxtastat",
+    "url": "https://urbanstats.org/quiz.html",
+    "description": "Pick which of two places matches an urban statistic.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "Statedoku",
+    "url": "https://statedoku.com",
+    "description": "3×3 grid of US states matching row and column clues.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "TerraDex",
+    "url": "https://terradex.mercilessstudio.com",
+    "description": "Five geography puzzles a day from a pool of twelve types.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "TuneGuessr",
+    "url": "https://www.tuneguessr.net",
+    "description": "Country from a song, with progressive hints.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "World Clue",
+    "url": "https://worldclue.com",
+    "description": "Country from hints about geography, culture and economy.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "FoodGuessr",
+    "url": "https://www.foodguessr.com",
+    "description": "Country a dish comes from.",
+    "category": "Geography & world",
+    "featured": false
+  },
+  {
+    "name": "Clues by Sam",
+    "url": "https://cluesbysam.com",
+    "description": "Criminal or innocent? Each correct deduction unlocks the next clue.",
+    "category": "Logic & deduction",
+    "featured": true
+  },
+  {
+    "name": "Murdle",
+    "url": "https://murdle.com",
+    "description": "Murder mystery logic grid: suspect × weapon × location; harder through the week.",
+    "category": "Logic & deduction",
+    "featured": true
+  },
+  {
+    "name": "Queens (LinkedIn)",
+    "url": "https://www.linkedin.com/games/queens",
+    "description": "One queen per row, column and colored region; no two touching.",
+    "category": "Logic & deduction",
+    "featured": true
+  },
+  {
+    "name": "Pips (NYT)",
+    "url": "https://www.nytimes.com/games/pips",
+    "description": "Place dominoes so colored regions satisfy sum and equality rules.",
+    "category": "Logic & deduction",
+    "featured": true
+  },
+  {
+    "name": "Daily Murder",
+    "url": "https://dailymurder.com",
+    "description": "Witness clues on a suspect/weapon/location grid.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Daily Akari",
+    "url": "https://thinkygames.com/games/daily-akari/",
+    "description": "Place lights so every cell is lit, respecting numbered walls.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Stars",
+    "url": "https://thinkygames.com/games/inkwell-stars/",
+    "description": "Two stars per row, column and region, none touching.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Fields",
+    "url": "https://thinkygames.com/games/inkwell-fields/",
+    "description": "Two-color a grid so no color touches across a region border.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Loopy",
+    "url": "https://loopy.wtf",
+    "description": "Draw a closed loop that turns on numbered cells.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Sections",
+    "url": "https://www.sectionspuzzle.com",
+    "description": "Fill a sectioned grid with numbers, no repeats.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Shrooms",
+    "url": "https://greatest.games/g/shrooms",
+    "description": "Place mushrooms per row/column/region, never touching.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Gerrymandle",
+    "url": "https://gerrymandle.cc",
+    "description": "Draw electoral districts so your party wins.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Seedle",
+    "url": "https://seedle.io",
+    "description": "Place crops on a grid to maximize your score.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Spectra",
+    "url": "https://spectra.quest",
+    "description": "Sort items by a hidden metric using feedback.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Figure",
+    "url": "https://figure.game",
+    "description": "Clear the board of colored tiles in a limited number of taps.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Daily chess puzzle",
+    "url": "https://www.chess.com/daily-chess-puzzle",
+    "description": "Find the best move sequence.",
+    "category": "Logic & deduction",
+    "featured": false
+  },
+  {
+    "name": "Nerdle",
+    "url": "https://nerdlegame.com",
+    "description": "Guess the hidden equation in six tries.",
+    "category": "Math & numbers",
+    "featured": true
+  },
+  {
+    "name": "Sudoku (daily)",
+    "url": "https://greatest.games/g/sudoku",
+    "description": "Daily 9×9 at four difficulties.",
+    "category": "Math & numbers",
+    "featured": false
+  },
+  {
+    "name": "Compoundle",
+    "url": "https://compoundle.com",
+    "description": "Invest, short or pass on a stock from its price history.",
+    "category": "Math & numbers",
+    "featured": false
+  },
+  {
+    "name": "Lost Art Games",
+    "url": "https://www.lostartgames.com",
+    "description": "Small set of daily number, quote and word puzzles.",
+    "category": "Math & numbers",
+    "featured": false
+  },
+  {
+    "name": "Angle",
+    "url": "https://angle.wtf",
+    "description": "Estimate an angle by eye.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Angler",
+    "url": "https://greatest.games/g/angler",
+    "description": "Guess an angle in four tries with warmer/colder hints.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "The Daily Hue",
+    "url": "https://thedailyhue.com",
+    "description": "Match a color from a famous artwork using HSL sliders.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Chroma",
+    "url": "https://greatest.games/g/chroma",
+    "description": "Mix palette shades to hit a target color.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Afterglow",
+    "url": "https://greatest.games/g/afterglow",
+    "description": "Remember five colors, then rebuild each one.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Huedle",
+    "url": "https://www.huedle.uk",
+    "description": "Rearrange color tiles into a perfect gradient.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Gradientle",
+    "url": "https://gradientle.pages.dev",
+    "description": "Build a 2D gradient by moving color tiles.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Close Hue",
+    "url": "https://closehue.com",
+    "description": "Pick the swatch that matches a color name.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Toon Tone Fun",
+    "url": "https://toon-tone.fun",
+    "description": "Recreate a cartoon character's exact color from memory.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Huekle",
+    "url": "https://huekle.com",
+    "description": "Daily tests of color, pitch and tempo perception.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Hearkle",
+    "url": "https://hearkle.com",
+    "description": "Daily tests of color, pitch and tempo perception.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Chronkle",
+    "url": "https://chronkle.com",
+    "description": "Daily tests of color, pitch and tempo perception.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Talldle",
+    "url": "https://www.talldle.com",
+    "description": "Sort celebrities by height.",
+    "category": "Perception: color, angle, pitch",
+    "featured": false
+  },
+  {
+    "name": "Bandle",
+    "url": "https://bandle.app",
+    "description": "Guess the song as instrument tracks are layered in.",
+    "category": "Music",
+    "featured": true
+  },
+  {
+    "name": "Heardle Decades",
+    "url": "https://heardledecades.com",
+    "description": "Name songs from clips that get longer with each miss.",
+    "category": "Music",
+    "featured": false
+  },
+  {
+    "name": "Songless",
+    "url": "https://www.songless.org",
+    "description": "Same idea: guess from progressively longer snippets.",
+    "category": "Music",
+    "featured": false
+  },
+  {
+    "name": "Musicle",
+    "url": "https://musicle.app",
+    "description": "Guess songs from short audio snippets.",
+    "category": "Music",
+    "featured": false
+  },
+  {
+    "name": "Spotle",
+    "url": "https://spotle.io",
+    "description": "Guess a music artist from attribute hints.",
+    "category": "Music",
+    "featured": false
+  },
+  {
+    "name": "PopIdle",
+    "url": "https://popidle.the-sound.co.uk/",
+    "description": "Album from pixelated cover art.",
+    "category": "Music",
+    "featured": false
+  },
+  {
+    "name": "Chordle",
+    "url": "https://guitarapp.com/chords/chordle",
+    "description": "Guess a guitar chord.",
+    "category": "Music",
+    "featured": false
+  },
+  {
+    "name": "Framed",
+    "url": "https://framed.wtf",
+    "description": "Movie from stills.",
+    "category": "Movies & TV",
+    "featured": true
+  },
+  {
+    "name": "Actorle",
+    "url": "https://actorle.com",
+    "description": "Actor from an anonymized list of their films.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Box Office Game",
+    "url": "https://boxofficega.me",
+    "description": "Name a random weekend's top five box-office movies.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Cinenerdle",
+    "url": "https://www.cinenerdle2.app",
+    "description": "Chain or group movies by shared actors and details.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "MovieGrid",
+    "url": "https://moviegrid.io",
+    "description": "3×3 grid of movies matching row and column criteria.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Cinematrix",
+    "url": "https://www.vulture.com/article/daily-movie-grid-trivia-game-cinematrix.html",
+    "description": "3×3 grid of movies matching row and column criteria.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Movie to Movie",
+    "url": "https://movietomovie.com",
+    "description": "Link two movies through shared actors.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Castme",
+    "url": "https://castme.wtf",
+    "description": "Movie or series from its actors' faces.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "KINO",
+    "url": "http://www.dailykino.com",
+    "description": "Movie or show from hints and a slowly unblurring poster.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Plot-Hole",
+    "url": "https://plot-hole.com",
+    "description": "Movie or show from five escalating clues.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "TV Addict",
+    "url": "https://tv-addict.com",
+    "description": "Movie or show from five escalating clues.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Mr. Troove",
+    "url": "https://www.mrtroove.com/en",
+    "description": "Find the ten hidden movie references in an illustration.",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "Moviedle",
+    "url": "https://moviedle.xyz",
+    "description": "Movie from an anonymized cast list (sister game Moviemoji uses emoji).",
+    "category": "Movies & TV",
+    "featured": false
+  },
+  {
+    "name": "TimeGuessr",
+    "url": "https://timeguessr.com",
+    "description": "Where and when was this photo taken?",
+    "category": "History & time",
+    "featured": true
+  },
+  {
+    "name": "Chronophoto",
+    "url": "https://www.chronophoto.app",
+    "description": "Guess the year of a photo.",
+    "category": "History & time",
+    "featured": false
+  },
+  {
+    "name": "Wikitrivia",
+    "url": "https://wikitrivia.tomjwatson.com",
+    "description": "Place historical events in order on a timeline.",
+    "category": "History & time",
+    "featured": false
+  },
+  {
+    "name": "Jaardle",
+    "url": "https://jaardle.com",
+    "description": "Guess the year of a historical event.",
+    "category": "History & time",
+    "featured": false
+  },
+  {
+    "name": "Yeardle",
+    "url": "https://histordle.com/yeardle/",
+    "description": "Guess the year from events that happened in it.",
+    "category": "History & time",
+    "featured": false
+  },
+  {
+    "name": "Earlier",
+    "url": "https://playearlier.com",
+    "description": "Which of two events came first? Three rounds.",
+    "category": "History & time",
+    "featured": false
+  },
+  {
+    "name": "Chronogram",
+    "url": "https://chronogram.chat",
+    "description": "Identify a historical figure by chatting with an AI playing them.",
+    "category": "History & time",
+    "featured": false
+  },
+  {
+    "name": "Costcodle",
+    "url": "https://costcodle.com",
+    "description": "Price of a Costco item.",
+    "category": "Prices & estimation",
+    "featured": true
+  },
+  {
+    "name": "Housle",
+    "url": "https://housle.house",
+    "description": "Asking or sale price of a house from photos.",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "Listed",
+    "url": "https://listed.fun",
+    "description": "Asking or sale price of a house from photos.",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "Cars & Games",
+    "url": "https://carsandgames.com/daily",
+    "description": "Car trivia and real-world car price guessing.",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "Estimania",
+    "url": "https://estimania.app",
+    "description": "Five daily estimation questions.",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "TubeCount",
+    "url": "https://tubecount.com",
+    "description": "YouTube view count from a thumbnail.",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "Scrandle",
+    "url": "https://scrandle.com/",
+    "description": "Which of two cheap meals did people rate higher?",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "NORMIE",
+    "url": "https://play-normie.com",
+    "description": "Answer three questions, then guess how the crowd voted.",
+    "category": "Prices & estimation",
+    "featured": false
+  },
+  {
+    "name": "catfishing",
+    "url": "https://catfishing.net/game/today",
+    "description": "Identify a Wikipedia article from its categories alone.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Wikipedia Speedrun",
+    "url": "https://wikispeedruns.com",
+    "description": "Get between two Wikipedia articles using only links.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Daily Dozen Trivia",
+    "url": "https://dailydozentrivia.com",
+    "description": "Trivia across nine categories, with wagering.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Thrice",
+    "url": "https://thrice.geekswhodrink.com",
+    "description": "Five questions with up to three hints each.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Disorderly",
+    "url": "https://playdisorderly.com",
+    "description": "Sort items by a stated property.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Check Please",
+    "url": "https://www.golunchlady.com/receipts",
+    "description": "Identify an NYC restaurant from a receipt.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "ClueTube",
+    "url": "https://thecluetube.com",
+    "description": "Identify a YouTube video from its comments.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Brandle",
+    "url": "https://www.capitalle.app/brandle",
+    "description": "Brand from a blurred logo.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Daily Orbs",
+    "url": "https://dailyorbs.com",
+    "description": "Handcrafted trivia puzzles.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "pictetra",
+    "url": "https://pictetra.com",
+    "description": "Identify what each image shows within ten seconds.",
+    "category": "Trivia & general knowledge",
+    "featured": false
+  },
+  {
+    "name": "Metazooa",
+    "url": "https://metazooa.com",
+    "description": "Mystery animal via the tree of life. Sister game Metaflora does plants.",
+    "category": "Nature & science",
+    "featured": true
+  },
+  {
+    "name": "Beat Darwin",
+    "url": "https://beatdarwin.com",
+    "description": "Species from a photo and biodiversity hints.",
+    "category": "Nature & science",
+    "featured": false
+  },
+  {
+    "name": "Gemdle",
+    "url": "https://www.gemdle.com",
+    "description": "Crystal or gemstone from specimen photos.",
+    "category": "Nature & science",
+    "featured": false
+  },
+  {
+    "name": "Daily Rinds",
+    "url": "https://dailyrinds.com",
+    "description": "Mystery cheese from country, milk and texture clues.",
+    "category": "Nature & science",
+    "featured": false
+  },
+  {
+    "name": "Immaculate Grid",
+    "url": "https://www.immaculategrid.com",
+    "description": "3×3 player grid by team and achievement. Versions for MLB, NFL, NBA, NHL, soccer.",
+    "category": "Sports",
+    "featured": true
+  },
+  {
+    "name": "Poeltl",
+    "url": "https://poeltl.nbpa.com",
+    "description": "Mystery NBA player; each guess compares team, position, height, age. The template for most sports dailies.",
+    "category": "Sports",
+    "featured": true
+  },
+  {
+    "name": "Footle",
+    "url": "https://balliq.app/footle",
+    "description": "Mystery footballer in six guesses.",
+    "category": "Sports",
+    "featured": false
+  },
+  {
+    "name": "Hertl",
+    "url": "https://www.hertl.app",
+    "description": "Mystery NHL player.",
+    "category": "Sports",
+    "featured": false
+  },
+  {
+    "name": "StatBox",
+    "url": "https://statbox.cc",
+    "description": "Mystery player; a new stat appears after each miss.",
+    "category": "Sports",
+    "featured": false
+  },
+  {
+    "name": "Sportiz",
+    "url": "https://playsportiz.com",
+    "description": "Mystery athlete from career facts, any sport.",
+    "category": "Sports",
+    "featured": false
+  },
+  {
+    "name": "Scorewit",
+    "url": "https://www.scorewit.com",
+    "description": "Daily sports history trivia: soccer, cricket, baseball, F1, NFL variants.",
+    "category": "Sports",
+    "featured": false
+  },
+  {
+    "name": "World Cup Time Machine",
+    "url": "https://wctm.app",
+    "description": "Draft an all-time World Cup XI and simulate a tournament.",
+    "category": "Sports",
+    "featured": false
+  },
+  {
+    "name": "GuessThe.Game",
+    "url": "https://guessthe.game",
+    "description": "Game from gameplay screenshots.",
+    "category": "Video games",
+    "featured": true
+  },
+  {
+    "name": "Gamedle",
+    "url": "https://www.gamedle.wtf",
+    "description": "Game from cover art, artwork or specs.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "Lostgamer",
+    "url": "https://lostgamer.io",
+    "description": "GeoGuessr inside video game worlds.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "PokeDoku",
+    "url": "https://pokedoku.com",
+    "description": "3×3 grid of Pokémon matching criteria.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "Squirdle",
+    "url": "https://squirdle.fireblend.com/daily.html",
+    "description": "Mystery Pokémon from trait comparisons.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "LoLdle",
+    "url": "https://loldle.net",
+    "description": "Mystery League of Legends champion.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "Rankdle",
+    "url": "https://rankdle.com",
+    "description": "Guess a player's rank from a gameplay clip.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "NintenDoku",
+    "url": "https://www.n-puzzle.com/en/nintendoku",
+    "description": "3×3 grid of Nintendo games.",
+    "category": "Video games",
+    "featured": false
+  },
+  {
+    "name": "Coffee Golf",
+    "url": "https://linktr.ee/coffeegolfgame",
+    "description": "A daily five-hole golf course; shareable stroke count.",
+    "category": "Skill & action (golf, jigsaw, reflexes)",
+    "featured": true
+  },
+  {
+    "name": "Kinda Hard Golf",
+    "url": "https://kindahardgolf.com",
+    "description": "Daily solo golf levels.",
+    "category": "Skill & action (golf, jigsaw, reflexes)",
+    "featured": false
+  },
+  {
+    "name": "Mini Golf Club",
+    "url": "https://minigolfclub.io/daily",
+    "description": "Daily 3D mini golf.",
+    "category": "Skill & action (golf, jigsaw, reflexes)",
+    "featured": false
+  },
+  {
+    "name": "DailyJig",
+    "url": "https://dailyjig.com",
+    "description": "Daily jigsaw with stats.",
+    "category": "Skill & action (golf, jigsaw, reflexes)",
+    "featured": false
+  },
+  {
+    "name": "NeuroSprint",
+    "url": "https://playneurosprint.vercel.app",
+    "description": "Reaction time, memory and sequence test.",
+    "category": "Skill & action (golf, jigsaw, reflexes)",
+    "featured": false
+  },
+  {
+    "name": "Puzzmo",
+    "url": "https://www.puzzmo.com",
+    "description": "Several daily puzzles (logic, word, spatial) with a shared streak.",
+    "category": "Bundles & hubs",
+    "featured": true
+  },
+  {
+    "name": "Gauntle",
+    "url": "https://gauntle.com",
+    "description": "Eleven quick puzzles under one timer.",
+    "category": "Bundles & hubs",
+    "featured": false
+  },
+  {
+    "name": "Stoop",
+    "url": "https://stoop.games",
+    "description": "Collection of small daily games.",
+    "category": "Bundles & hubs",
+    "featured": false
+  },
+  {
+    "name": "dles.gg",
+    "url": "https://dles.gg",
+    "description": "Directory of 1,000+ \"-dle\" games by category.",
+    "category": "Bundles & hubs",
+    "featured": false
+  },
+  {
+    "name": "The Daily Games Hub",
+    "url": "https://dailygames.xyz",
+    "description": "Another large categorized directory.",
+    "category": "Bundles & hubs",
+    "featured": false
+  },
+  {
+    "name": "Connections (NYT)",
+    "url": "https://www.nytimes.com/games/connections",
+    "description": "sort 16 items into four hidden groups.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Strands (NYT)",
+    "url": "https://www.nytimes.com/games/strands",
+    "description": "themed word search with a spangram.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Raddle",
+    "url": "https://raddle.quest",
+    "description": "riddle-driven word ladder.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Redactle",
+    "url": "https://redactle.net",
+    "description": "uncover a redacted Wikipedia article.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Semantle",
+    "url": "https://semantle.com",
+    "description": "guess a word by meaning, not spelling.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Squaredle",
+    "url": "https://squaredle.app",
+    "description": "Boggle-style daily grid.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Waffle",
+    "url": "https://wafflegame.net/daily",
+    "description": "swap letters to fix a waffle-shaped grid.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  },
+  {
+    "name": "Minute Cryptic",
+    "url": "https://www.minutecryptic.com",
+    "description": "one cryptic crossword clue a day.",
+    "category": "Bonus: the word-adjacent classics",
+    "featured": false
+  }
+]

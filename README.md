@@ -6,6 +6,8 @@ A curated list of "one puzzle a day" games in the spirit of Wordle: everyone get
 >
 > Last compiled: November 2026. Links come from those lists; daily-game sites move or shut down often, so expect a few dead links.
 
+**Browse it as a website:** `index.html` (served with GitHub Pages) has search, category filters, a random pick and a "played today" checklist. It reads `games.json`, which is generated from this README; after editing the tables, run `python3 scripts/build_data.py`.
+
 ## Contents
 
 - [Start here: the big ones](#start-here-the-big-ones)

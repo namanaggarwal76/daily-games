@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Games</title>
+<meta name="description" content="A curated directory of one-puzzle-a-day games like Wordle: geography, music, movies, logic, prices, history and more.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23e8590c'/><g fill='%23fff'><rect x='6' y='6' width='9' height='9' rx='2'/><rect x='17' y='6' width='9' height='9' rx='2' opacity='.55'/><rect x='6' y='17' width='9' height='9' rx='2' opacity='.55'/><rect x='17' y='17' width='9' height='9' rx='2'/></g></svg>">
+<style>
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --text: #1c1a17;
+  --muted: #6b655c;
+  --border: #e6e1d9;
+  --accent: #d9480f;
+  --accent-soft: #fff0e6;
+  --done: #2f9e44;
+  --done-soft: #ebfbee;
+  --shadow: 0 1px 2px rgba(28, 26, 23, .06), 0 4px 16px rgba(28, 26, 23, .04);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141311;
+    --surface: #1e1c19;
+    --text: #f1ede6;
+    --muted: #a39d93;
+    --border: #322f2a;
+    --accent: #ff8a4c;
+    --accent-soft: #3a2418;
+    --done: #69db7c;
+    --done-soft: #1b2e1f;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: inherit; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+header { padding: 48px 0 24px; }
+h1 {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -.02em;
+  line-height: 1.1;
+}
+.lede { margin: 0; color: var(--muted); max-width: 60ch; }
+.progress { margin-top: 16px; font-size: .9rem; color: var(--muted); }
+.progress strong { color: var(--done); }
+
+.controls {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--bg);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.search {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 10px 14px;
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.search:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+button {
+  font: inherit;
+  font-size: .9rem;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+button:hover { border-color: var(--accent); }
+button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.chips {
+  margin-top: 10px;
+  display: flex; gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  padding-bottom: 2px;
+}
+.chips button { padding: 6px 12px; font-size: .85rem; }
+
+main { padding: 24px 0 64px; }
+section { margin-bottom: 36px; }
+h2 {
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+  display: flex; align-items: baseline; gap: 8px;
+}
+h2 .count { font-weight: 400; font-size: .85rem; color: var(--muted); }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+.card {
+  position: relative;
+  display: flex; flex-direction: column; gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 48px 14px 16px;
+  box-shadow: var(--shadow);
+  transition: border-color .15s, transform .15s;
+}
+.card:hover { border-color: var(--accent); transform: translateY(-1px); }
+.card a.name {
+  font-weight: 600;
+  text-decoration: none;
+}
+.card a.name::after { content: ""; position: absolute; inset: 0; border-radius: 12px; }
+.card a.name:focus-visible { outline: none; }
+.card:has(a.name:focus-visible) { outline: 2px solid var(--accent); }
+.card p { margin: 0; font-size: .9rem; color: var(--muted); }
+.star {
+  display: inline-block;
+  font-size: .7rem; font-weight: 600;
+  text-transform: uppercase; letter-spacing: .04em;
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-radius: 4px;
+  padding: 1px 6px;
+  margin-left: 6px;
+  vertical-align: 2px;
+}
+.check {
+  position: absolute; top: 12px; right: 12px; z-index: 1;
+  width: 26px; height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  display: grid; place-items: center;
+  font-size: .8rem;
+  color: transparent;
+}
+.check:hover { color: var(--muted); }
+.card.done { background: var(--done-soft); border-color: var(--done); }
+.card.done .check { background: var(--done); border-color: var(--done); color: #fff; }
+.empty { color: var(--muted); text-align: center; padding: 48px 0; }
+
+footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 0 40px;
+  font-size: .85rem;
+  color: var(--muted);
+}
+footer a { color: var(--accent); }
+
+@media (max-width: 520px) {
+  header { padding-top: 32px; }
+  .grid { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card { transition: none; }
+  .card:hover { transform: none; }
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <h1>Daily Games</h1>
+  <p class="lede">One puzzle a day, same for everyone, done in a few minutes. A hand-picked list of Wordle-style games that go beyond words: maps, music, movies, logic, prices, history and more.</p>
+  <p class="progress" id="progress" hidden></p>
+</header>
+
+<div class="controls">
+  <div class="wrap">
+    <div class="row">
+      <input class="search" id="search" type="search" placeholder="Search games…" aria-label="Search games" autocomplete="off">
+      <button id="featured" aria-pressed="false" title="Show only the most recommended games">★ Popular</button>
+      <button id="random" title="Open a random game you haven't played today">🎲 Surprise me</button>
+    </div>
+    <div class="chips" id="chips" role="toolbar" aria-label="Filter by category"></div>
+  </div>
+</div>
+
+<main class="wrap" id="list" aria-live="polite"></main>
+
+<footer class="wrap">
+  <p>Tick a game when you've played it; ticks reset each day and are saved only in this browser. Links point to independent sites, and daily games come and go, so the occasional link may break.
+  The list is maintained in <a href="https://github.com/namanaggarwal76/daily-games">the GitHub repo</a>; suggestions welcome.</p>
+</footer>
+
+<script>
+(() => {
+  const SHORT = {
+    "Geography & world": "Geography",
+    "Logic & deduction": "Logic",
+    "Math & numbers": "Math",
+    "Perception: color, angle, pitch": "Perception",
+    "Music": "Music",
+    "Movies & TV": "Movies & TV",
+    "History & time": "History",
+    "Prices & estimation": "Prices",
+    "Trivia & general knowledge": "Trivia",
+    "Nature & science": "Nature",
+    "Sports": "Sports",
+    "Video games": "Video games",
+    "Skill & action (golf, jigsaw, reflexes)": "Skill & action",
+    "Bundles & hubs": "Bundles & hubs",
+    "Bonus: the word-adjacent classics": "Word classics",
+  };
+  const label = c => SHORT[c] || c;
+
+  const today = new Date().toLocaleDateString("en-CA");
+  const KEY = "daily-games:done";
+  const store = {
+    load() {
+      try {
+        const v = JSON.parse(localStorage.getItem(KEY) || "{}");
+        return v.date === today ? new Set(v.urls) : new Set();
+      } catch { return new Set(); }
+    },
+    save(set) {
+      try { localStorage.setItem(KEY, JSON.stringify({ date: today, urls: [...set] })); } catch {}
+    },
+  };
+
+  const state = { games: [], query: "", category: null, featured: false, done: store.load() };
+  const $ = id => document.getElementById(id);
+  const esc = s => s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+  function visible() {
+    const q = state.query.trim().toLowerCase();
+    return state.games.filter(g =>
+      (!state.category || g.category === state.category) &&
+      (!state.featured || g.featured) &&
+      (!q || (g.name + " " + g.description + " " + g.category).toLowerCase().includes(q))
+    );
+  }
+
+  function renderChips(categories) {
+    const make = (cat, text) => {
+      const b = document.createElement("button");
+      b.textContent = text;
+      b.setAttribute("aria-pressed", String(state.category === cat));
+      b.onclick = () => { state.category = cat; renderChips(categories); render(); };
+      return b;
+    };
+    const chips = $("chips");
+    chips.replaceChildren(make(null, "All"), ...categories.map(c => make(c, label(c))));
+  }
+
+  function render() {
+    const games = visible();
+    const groups = new Map();
+    for (const g of games) {
+      if (!groups.has(g.category)) groups.set(g.category, []);
+      groups.get(g.category).push(g);
+    }
+    const list = $("list");
+    if (!games.length) {
+      list.innerHTML = '<p class="empty">No games match that search.</p>';
+    } else {
+      list.innerHTML = [...groups].map(([cat, items]) => `
+        <section>
+          <h2>${esc(label(cat))} <span class="count">${items.length}</span></h2>
+          <div class="grid">${items.map(card).join("")}</div>
+        </section>`).join("");
+    }
+    renderProgress();
+  }
+
+  function card(g) {
+    const done = state.done.has(g.url);
+    return `<div class="card${done ? " done" : ""}">
+      <a class="name" href="${esc(g.url)}" target="_blank" rel="noopener">${esc(g.name)}${g.featured ? '<span class="star">Popular</span>' : ""}</a>
+      <p>${esc(g.description)}</p>
+      <button class="check" data-url="${esc(g.url)}" aria-pressed="${done}" aria-label="Mark ${esc(g.name)} as played today" title="Played today">✓</button>
+    </div>`;
+  }
+
+  function renderProgress() {
+    const n = state.done.size;
+    const p = $("progress");
+    p.hidden = n === 0;
+    p.innerHTML = `<strong>${n}</strong> played today. Nice.`;
+  }
+
+  function toggle(url, force) {
+    const on = force ?? !state.done.has(url);
+    on ? state.done.add(url) : state.done.delete(url);
+    store.save(state.done);
+    render();
+  }
+
+  $("list").addEventListener("click", e => {
+    const btn = e.target.closest(".check");
+    if (btn) { toggle(btn.dataset.url); return; }
+    const link = e.target.closest("a.name");
+    if (link) toggle(link.getAttribute("href"), true);
+  });
+  $("search").addEventListener("input", e => { state.query = e.target.value; render(); });
+  $("featured").addEventListener("click", e => {
+    state.featured = !state.featured;
+    e.currentTarget.setAttribute("aria-pressed", String(state.featured));
+    render();
+  });
+  $("random").addEventListener("click", () => {
+    const pool = visible().filter(g => !state.done.has(g.url));
+    const pick = (pool.length ? pool : visible())[Math.floor(Math.random() * (pool.length || visible().length))];
+    if (!pick) return;
+    window.open(pick.url, "_blank", "noopener");
+    toggle(pick.url, true);
+  });
+
+  fetch("games.json")
+    .then(r => r.json())
+    .then(games => {
+      state.games = games;
+      renderChips([...new Set(games.map(g => g.category))]);
+      render();
+    })
+    .catch(() => { $("list").innerHTML = '<p class="empty">Couldn\'t load the game list. Try reloading.</p>'; });
+})();
+</script>
+</body>
+</html>
